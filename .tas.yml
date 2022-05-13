@@ -8,12 +8,10 @@ preMerge:
   pattern:
     - "test/slider-test.jsx"
     - "test/algorithms/geometric-test.js"
-    - "test/algorithms/new-test.js"
 postMerge: 
   pattern: 
     - "test/slider-test.jsx"
     - "test/algorithms/geometric-test.js"
-    - "test/algorithms/new-test.js"
 postRun:
      command:
         - node --version
