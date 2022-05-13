@@ -1,9 +1,19 @@
 ---
 framework: jest
 preRun:
+     env:
+        - export TEST=true
+        - export REACT=0.14
      command:
-        - npm i
+        - export TEST=true
+        - export REACT=0.14
+        - nvm install 10
+        - node --version
+        - npm --version
+        - nvm --version
+        - nvm install-latest-npm
         - npm run react
+        - enzyme-adapter-react-install 16
 preMerge:
   env:
     --testEnvironment: node
@@ -21,5 +31,4 @@ postMerge:
 postRun:
      command:
         - node --version
-nodeVersion: 14.18.1
 version: 1.0
