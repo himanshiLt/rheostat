@@ -1,10 +1,12 @@
 ---
 framework: jest
 preRun:
+     env:
+        - TEST=true 
+        - REACT=15
      command:
-        - npm i
+        - npm install
         - npm run react
-        - enzyme-adapter-react-install 16
 preMerge:
   env:
     --testEnvironment: node
