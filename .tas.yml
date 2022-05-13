@@ -1,0 +1,19 @@
+---
+framework: jest
+preRun:
+     command:
+        - npm i
+        - npm run react
+preMerge:
+  pattern:
+    - "test/algorithms/geometric-test.js"
+    - "test/algorithms/new-test.js"
+postMerge: 
+  pattern: 
+    - "test/algorithms/geometric-test.js"
+    - "test/algorithms/new-test.js"
+postRun:
+     command:
+        - node --version
+nodeVersion: 14.18.1
+version: 1.0
