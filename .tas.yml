@@ -1,9 +1,6 @@
 ---
 framework: jest
 preRun:
-     env:
-        - export TEST=true
-        - export REACT=0.14
      command:
         - export TEST=true
         - export REACT=0.14
