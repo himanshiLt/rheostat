@@ -1,12 +1,12 @@
 ---
 framework: jest
 preRun:
-     env:
-        - TEST: true 
-        - REACT: 15
-     command:
-        - npm install
-        - npm run react
+  commands:
+    - npm i
+    - npm run react
+  env:  
+    TEST: true 
+    REACT: 16
 preMerge:
   env:
     --testEnvironment: node
@@ -22,7 +22,7 @@ postMerge:
     - "test/algorithms/geometric-test.js"
     - "test/algorithms/new-test.js"
 postRun:
-     command:
-        - node --version
+  command:
+    - node --version
 nodeVersion: 14.18.1
 version: 1.0
