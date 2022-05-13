@@ -2,8 +2,8 @@
 framework: jest
 preRun:
      env:
-        - TEST=true 
-        - REACT=15
+        - TEST: true 
+        - REACT: 15
      command:
         - npm install
         - npm run react
