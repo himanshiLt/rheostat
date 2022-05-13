@@ -2,11 +2,7 @@
 framework: jest
 preRun:
      command:
-        - nvm install 10
-        - node --version
-        - npm --version
-        - nvm --version
-        - nvm install-latest-npm
+        - npm i
         - npm run react
         - enzyme-adapter-react-install 16
 preMerge:
@@ -26,4 +22,5 @@ postMerge:
 postRun:
      command:
         - node --version
+nodeVersion: 14.18.1
 version: 1.0
