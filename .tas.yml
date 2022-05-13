@@ -4,9 +4,6 @@ preRun:
   commands:
     - npm i
     - npm run react
-  env:  
-    TEST: true 
-    REACT: 16
 preMerge:
   env:
     --testEnvironment: node
