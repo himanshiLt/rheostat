@@ -5,11 +5,15 @@ preRun:
         - npm i
         - npm run react
 preMerge:
+  env:
+    --testEnvironment: node
   pattern:
     - "test/slider-test.jsx"
     - "test/algorithms/geometric-test.js"
     - "test/algorithms/new-test.js"
 postMerge: 
+  env:
+    --testEnvironment: node
   pattern: 
     - "test/slider-test.jsx"
     - "test/algorithms/geometric-test.js"
