@@ -10,7 +10,6 @@ preMerge:
     - "test/algorithms/geometric-test.js"
 postMerge: 
   pattern: 
-    - "test/slider-test.jsx"
     - "test/algorithms/geometric-test.js"
 postRun:
      command:
