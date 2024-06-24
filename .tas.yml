@@ -6,7 +6,6 @@ preRun:
         - npm run react
 preMerge:
   pattern:
-    - "test/slider-test.jsx"
     - "test/algorithms/geometric-test.js"
 postMerge: 
   pattern: 
